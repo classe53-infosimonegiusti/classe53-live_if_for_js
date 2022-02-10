@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    
+    <div id="root">
+
+        <!--
+        <input type="number" v-model="eta">
+
+        <p>Verifica se sei maggiorenne!</p>
+
+        <div v-if="eta > 18">
+            <div>Sono maggiorenne</div>
+            <div>;-)</div>
+        </div>
+
+        <template v-else>
+            <div>Sono minorenne</div>
+            <div>:-(</div>
+        </template>
+
+        <ul>
+            <li v-for="(amico, indice) in amici" @click="stampaNomeAmico(indice)">
+                {{indice}} - {{amico}}
+            </li>
+        </ul>
+
+
+        -->
+
+        <button @click="toggleMenu()" :class="miaClasse">Toggle Menu</button>
+
+        <ul v-show="menuVisibile">
+            <li v-for="(elemento, indice) in menu">
+                <a :href="elemento.url">{{elemento.nome}}</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li v-for="numero in 10">
+                {{numero + 10}}
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
